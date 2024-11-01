@@ -1,0 +1,33 @@
+/* Slideshow container */ 
+.vspsSlides {display:none;}
+.vsps-active-slide {display:block;}
+
+/* The dots/bullets/indicators */
+.vsps-dot {cursor:pointer; margin: 0 6px; opacity: 0.6;}
+.vsps-active, .vsps-dot:hover {opacity: 1;}
+
+/* For Rounded egises */
+.vsps-dot-color-selected{padding: 2% 6%; box-shadow: inset 0 0 0 1px #fff, 0 0 0 2px #414b56;}
+.vsps-slider-container{padding: 14px 0px; overflow: auto; white-space: nowrap}
+.vsps-dot img{width: 40px; height: 40px; display: inline !important;}
+
+/* Product Icons */
+.vsps-dot-color-selected{background-position: center !important; display: inline}
+
+/* Fading animation */
+.vsps_slider_fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes vsps_slider_fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes vsps_slider_fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
